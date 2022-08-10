@@ -154,7 +154,6 @@ img {
 .header-contacts {
   display: flex;
   align-items: center;
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
@@ -173,8 +172,8 @@ img {
 }
 .icon-smartphone {
   display: flex;
-  display: inline-block;
   align-items: center;
+  display: inline-block;
   fill: currentColor;
   margin-right: 10px;
 }
