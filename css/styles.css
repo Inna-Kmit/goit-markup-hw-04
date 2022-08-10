@@ -152,6 +152,8 @@ img {
 
 /*-----------------header contacts------------------*/
 .header-contacts {
+  display: flex;
+  align-items: center;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -170,12 +172,16 @@ img {
   margin-right: 50px;
 }
 .icon-smartphone {
+  display: flex;
   display: inline-block;
+  align-items: center;
   fill: currentColor;
   margin-right: 10px;
 }
 .icon-envelope {
+  display: flex;
   display: inline-block;
+  align-items: center;
   fill: currentColor;
   margin-right: 10px;
 }
@@ -195,7 +201,7 @@ img {
     url('../images/bgcstudia.jpg');
   background-position: center;
   background-repeat: no-repeat;
-  background-size: top 80px, cover;
+  background-size: cover;
 }
 .hero-titile {
   font-weight: 900;
@@ -358,7 +364,7 @@ img {
   justify-content: center;
   margin-top: 16px;
 }
-.social-item {
+.social-item:not(:last-child) + :not(:first-child) {
   margin-left: 10px;
 }
 .social-link {
@@ -387,12 +393,12 @@ img {
   font-size: 36px;
   line-height: 42px;
   line-height: 1.16;
-  text-align: Center;
+  text-align: center;
   letter-spacing: 0.03;
   color: var(--primary-text-color);
   margin-bottom: 50px;
 }
-.clients-item {
+.clients-item:not(:last-child) {
   margin-right: 30px;
   background-color: inherit;
 }
@@ -414,9 +420,8 @@ img {
 .clients-link:hover,
 .clients-link:focus {
   fill: var(--accent-color);
-  border: 1px, solid var(--accent-color);
+  border-color: var(--accent-color);
   outline: none;
-  background-color: inherit;
 }
 /*---------------------Portfolio-----------------*/
 /*--------Hero-------*/
@@ -465,6 +470,8 @@ img {
 .filter-buttom:focus {
   background: var(--accent-color);
   color: var(--background-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-buttom {
   cursor: pointer;
@@ -482,7 +489,12 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-
+.postfolio-list-link:hover,
+.postfolio-list-link:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /*----------------------footer-------------------*/
 .footer {
   background-color: var(--footer-background);
@@ -555,7 +567,7 @@ img {
   padding: 0;
 }
 
-.acept-item {
+.acept-item:not(:last-child) {
   margin-right: 10px;
 }
 .acept-link {
